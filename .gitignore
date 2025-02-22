@@ -1,3 +1,5 @@
-download_n_run.sh
 exec.sql
 *.csv
+*.sh
+
+!duckadmin.sh
