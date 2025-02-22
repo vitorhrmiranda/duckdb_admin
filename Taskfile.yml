@@ -1,0 +1,10 @@
+version: "3"
+
+tasks:
+  default:
+    cmds:
+      - cp exec.sql.sample exec.sql
+      - ./duckadmin.sh exec.sql
+  download_n_run:
+    cmds:
+      - ./download_n_run.sh

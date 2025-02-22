@@ -1,0 +1,7 @@
+services:
+  duckdb:
+    container_name: duckdb
+    build: .
+    volumes:
+      - ${PWD}:/app
+    entrypoint: task

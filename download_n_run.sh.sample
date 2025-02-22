@@ -1,0 +1,12 @@
+#!/bin/zsh -e
+
+tmp_file="$(mktemp).csv"
+
+curl -s 'https://csv' | jq -r '.data' > $tmp_file
+
+echo "Report downloaded to '$tmp_file'"
+
+duckdb <<SQL
+SELECT *
+FROM '$tmp_file'
+SQL
