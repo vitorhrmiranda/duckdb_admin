@@ -5,3 +5,8 @@ tasks:
     cmds:
       - cp exec.sql.sample exec.sql
       - ./duckadmin.sh exec.sql
+  python-*:
+    vars:
+      FILE: '{{index .MATCH 0}}'
+    cmds:
+      - ./duckpy.sh {{.FILE}}

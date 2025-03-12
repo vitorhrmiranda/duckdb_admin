@@ -17,3 +17,8 @@ docker logs --tail 1000 -f duckdb
 Every time the `exec.sql` file is modified, the new SQL query is automatically applied using DuckDB. The query results are then displayed in the container logs.
 
 <video src="https://github.com/user-attachments/assets/4cdcbc80-1982-4b0a-b45a-8da6760bce9d"> </video>
+
+### With python
+```sh
+task python-{your_python_file}.py
+```

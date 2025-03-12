@@ -1,5 +1,7 @@
 exec.sql
 *.csv
 *.sh
+*.py
 
 !duckadmin.sh
+!duckpy.sh
